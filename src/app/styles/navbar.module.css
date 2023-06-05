@@ -1,0 +1,20 @@
+.main_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f48020;
+    color: white;
+    padding: 10px 100px;
+}
+
+.fontIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.listItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}

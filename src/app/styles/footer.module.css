@@ -1,0 +1,84 @@
+
+.footer_container {
+    background-color: #07527B;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background-image: url('/wave.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 1320px;
+    margin: auto;
+    padding: 25px;
+    display: flex;
+    gap: 25px;
+}
+
+
+.f_about{
+    /* max-width: 50%; */
+    flex-basis: 50%;
+}
+
+.f_about img {
+    margin-bottom: 20px;
+    font-weight: 900;
+    padding: 0;
+}
+
+.f_about p {
+    letter-spacing: 0.05rem;
+    color: white;
+}
+
+.f_links {
+    flex-basis: 23%;
+}
+
+.container a{
+    text-decoration: none;
+    color: white;
+}
+
+.container li{
+    padding: 8px 0px;
+}
+
+.container h3{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.f_info h3{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.wave_svg {
+    background-color: #07527B;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.wave_svg img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+.footer_container a:hover{
+    color: #f48020;
+}

@@ -1,95 +1,55 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import React from 'react'
+import HeroSection from './components/HeroSection'
+import About from './about/page'
+import AboutUs from './components/AboutUs'
 
-export default function Home() {
+import SliderCard from './components/SliderCard'
+import WhyDymamicCard from './components/WhyDymamicCard'
+import Testimonials from './components/Testimonials'
+import Footer from './components/Footer'
+import TestimonialCarousel from './components/TestimonialCarousel'
+
+// import Projects from './components/projects/Projects'
+// import Project from './components/projects/project'
+// import styles from "./styles/project.module.css"
+
+
+const page = () => {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
+    <div>
+      <HeroSection 
+        title={"Quality Services,Your really want !"} 
+        text={"Creative Skills Pvt. Ltd. is training and employment service providing company. The company provides vocational training, entrepreneurship development services, career counseling andplacement services."} 
+        imageUrl={"/pic2.jpg"} 
+      />
+      <AboutUs />
+
+      <SliderCard />
+
+      <div style={{ display: 'flex', flexDirection: 'column', margin: "30px 100px" }}>
         <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+          <h3 style={{fontSize:"45px", color:"#054F7E", padding:"20px 0px" }} >Why DynamicSkills</h3>
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'row', gap:"25px" }}>
+          <WhyDymamicCard heading={"Well-Equipped Lab"}  />
+          <WhyDymamicCard heading={"Highly experience instructor"} />
+          <WhyDymamicCard heading={"Support after training"} />
         </div>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      {/* <Testimonials /> */}
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+      
+      {/* <Project className={styles.project} /> */}
+        {/* <Projects /> */}
+      {/* </Project> */}
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+      <TestimonialCarousel />
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      <Footer />
+      
+    </div>
   )
 }
+
+export default page

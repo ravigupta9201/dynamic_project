@@ -1,0 +1,33 @@
+.main_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px 100px;
+}
+
+.navbar_brand{
+    text-align: left;
+}
+
+.navbarList {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+.navbar_button {
+    border-radius: 1.4rem;
+    border-style: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 20px;
+    padding: .3rem 1.2rem;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #f48020;
+}
